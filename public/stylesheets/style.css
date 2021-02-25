@@ -1,0 +1,120 @@
+/*=========HOME==========*/
+.home-body{
+    margin: 0;
+    padding: 0;
+    background: #5B2C6F;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .navigation{
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+  }
+  .navbar-brand:hover{
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .social-media ul{
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+  .social-media ul li{
+    display: inline;
+    margin-left: 25px;
+  }
+  .social-media a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+  }
+  .social-media a:hover {
+    color: #0a98c0;
+  }
+  .message{
+    font-style: italic;
+  }
+  .underline{
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .box{
+    padding: 30px;
+  }
+  .form-control{
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .form-control:focus {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .form-btn {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #1bb1dc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 30px;
+  }
+  .form-btn:hover {
+    background: #0a98c0;
+  }
+  .btn-default{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1bb1dc;
+    color: #fff;
+  }
+  .btn-default:hover{
+    background: #0a98c0;
+    color: #fff;
+  }
+  .feedback-success {
+    color: rgb(36, 212, 36);
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  .feedback-error {
+    color: rgb(231, 25, 25);
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  
+  /*===========LOGIN============*/
+  .login-para p{
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+  .f-password{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+  }
+  .f-password:hover{
+    color: #f0f0f0;
+  }
+  .signup-link{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  .signup-link:hover{
+    color: #f0f0f0;
+  }
+  
+  /*==========SECRET===========*/
+  .dash-link{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .dash-link:hover{
+    color: #f0f0f0;
+  }

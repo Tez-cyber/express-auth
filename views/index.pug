@@ -1,0 +1,43 @@
+include includes/header.pug
+
+block content
+  link(rel="stylesheet" href="/stylesheets/style.css")
+  body(class="home-body")
+    include includes/navbar.pug
+    div(class="main pt-5")
+      div(class="container")
+        div(class="row")
+          div(class="col-md-6")
+            div(class="welcome")
+              h3 Welcome to Respondant!
+              p(class="message mt-3") Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat eveniet deserunt debitis inventore dolores eligendi! Alias ea, non provident a, ipsa sint perspiciatis cum doloremque optio eveniet obcaecati! Repellendus.
+              p(class="message mt-3") Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ab alias? Minus odio quos cupiditate rerum, dolor quo repudiandae dolore ab excepturi repellat aut impedit explicabo perferendis consectetur, ea ipsum.
+              P(class="message mt-3") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi provident perspiciatis iusto impedit repudiandae doloribus officia sequi ut totam quia quisquam explicabo, blanditiis molestias rerum aperiam delectus eveniet nesciunt? Explicabo!
+              
+              hr(class="underline")
+          div(class="col-md-6")
+            div(class="box shadow-lg")
+              form(method="POST")
+                if errors 
+                  each error in errors 
+                    p(class='feedback-error')!=  error.msg
+                input(type="text" class="form-control" placeholder="Username" id="username" name="username" required)
+                p(class="username-feedback")
+                input(type="text" class="form-control" placeholder="First Name" id="first_name" name="first_name" required)
+                p(class="firstname-feedback")
+                input(type="text" class="form-control" placeholder="Last Name" id="last_name" name="last_name" required)
+                p(class="lastname-feedback")
+                input(type="email" class="form-control" placeholder="Email" id="email" name="email" required)
+                p(class="email-feedback")
+                input(type="password" class="form-control" placeholder="Password" id="password" name="password" required)
+                p(class="password-feedback")
+                input(type="password" class="form-control" placeholder="Confirm Password" id="cPassword" name="cPassword" required)
+                p(class="cpassword-feedback")
+                input(type="checkbox" id="check")
+                span(class="pl-2") I have read the #[a(href="/terms" class="f-password") Terms and Conditions]
+                button(type="submit" class="form-btn shadow mt-2" id="submit") Sign up
+                div(class="text-center pt-1")
+                  i(class="on-submit")
+
+    script(src="/javascripts/signup.js" type="module")
+    include includes/footer.pug
